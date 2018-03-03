@@ -28,58 +28,73 @@
 
 		<section class="sort">
 			<h2 class="visually-hidden">Сортировка отелей</h2>
-			<b>Найдено: 3</b>
-			<span>Сортировка:</span>
-			<ul class="sort-list">
-				<li class="sort-item"><a href="#">По цене</a></li>
-				<li class="sort-item"><a href="#">По типу</a></li>
-				<li class="sort-item"><a href="#">По рейтингу</a></li>
-			</ul>
-			
+			<div class="sort-part-first">
+				<b>Найдено: 3</b>
+			</div>
+			<div class="sort-part-second">
+				<span>Сортировка:</span>
+				<ul class="sort-list">
+					<li class="sort-item"><a href="#">По цене</a></li>
+					<li class="sort-item"><a href="#">По типу</a></li>
+					<li class="sort-item"><a href="#">По рейтингу</a></li>
+				</ul>
+			</div>
+			<div class="sort-part-third">
+				<!-- Здесь будут стрелочки -->
+			</div>
 		</section>
 
-		<section class="catalog">
+		<article class="catalog">
 			<h2 class="visually-hidden">Список отелей</h2>
 			<ul class="catalog-list">
 				<li class="catalog-item">
 					<h3>Amara resod & spa</h3>
-					<img src="#" alt="Первый отель">
+					<div class="catalog-image">
+						<img src="#" alt="Первый отель">
+					</div>
 					<div class="pryce">
 						<span class="pryse-items">Гостиница</span>
 						<span class="pryse-items">От 4000Р.</span>
+						<a href="#" class="button-reservation">Забронировать</a>
+						<a href="#" class="button-detailed">Подробнее</a>
 					</div>
-					<a href="#" class="button-reservation">Забронировать</a>
-					<a href="#" class="button-detailed">Подробнее</a>
-					<span class="rating">Рейтинг: 8.5</span>
+					<div class="rating">
+						<span class="rating-item">Рейтинг: 8.5</span>
+					</div>
 				</li>
 				<li class="catalog-item">
 					<h3>Desert quaile inn</h3>
-					<img src="#" alt="Втрой отель">
+					<div class="catalog-image">
+						<img src="#" alt="Втрой отель">
+					</div>
 					<div class="pryce">
 						<span class="pryse-items">Мотель</span>
 						<span class="pryse-items">От 3000Р.</span>
+						<a href="#" class="button-reservation">Забронировать</a>
+						<a href="#" class="button-detailed">Подробнее</a>
 					</div>
-					<a href="#" class="button-reservation">Забронировать</a>
-					<a href="#" class="button-detailed">Подробнее</a>
-					<span class="rating">Рейтинг: 8.9</span>
+					<div class="rating">
+						<span class="rating-item">Рейтинг: 8.9</span>
+					</div>
 				</li>
 				<li class="catalog-item">
 					<h3>Villas at poco diablo</h3>
-					<img src="#" alt="Третий отель">
+					<div class="catalog-image">
+						<img src="#" alt="Третий отель">
+					</div>
 					<div class="pryce">
 						<span class="pryse-items">Апартаменты</span>
 						<span class="pryse-items">От 2000Р.</span>
+						<a href="#" class="button-reservation">Забронировать</a>
+						<a href="#" class="button-detailed">Подробнее</a>
 					</div>
-					<a href="#" class="button-reservation">Забронировать</a>
-					<a href="#" class="button-detailed">Подробнее</a>
-					<span class="rating">Рейтинг: 9.2</span>
+					<div class="rating">
+						<span class="rating-item">Рейтинг: 9.2</span>
+					</div>
 				</li>
 			</ul>
 			
-		</section>
-
-
-		
+		</article>
 	</main>
 
 	<footer class="main-footer">
@@ -92,11 +107,8 @@
 			</ul>
 		</div>
 		<p class="footer-copiright">
-
-			WEBSITE BY<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+		WEBSITE BY<a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
 		</p>
-		
-		
 	</footer>
 	
 </body>
