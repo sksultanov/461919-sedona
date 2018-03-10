@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header class="main-header">
-		<a class="main-logo" href="index.html"><img src="img/logo.png" width="138" height="70" alt="Главный логотип"></a>
+		<a class="main-logo" href="index.html"><img src="img/logomain.png" width="138" height="70" alt="Главный логотип"></a>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li><a href="#">Информация</a></li>
@@ -24,6 +24,57 @@
 		<section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
         <!-- Здесь будет форма -->
+        <form class="interesting-form" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=costinput.value">
+        	<div class="infrastructure">
+        		<p>Инфраструктура:</p>
+        	<label class="checkbox-item">
+            	<input type="checkbox" name="pool" value="pool" class="visually-hidden">
+            	<span class="checkbox-indicator"></span>
+            	Бассейн
+          	</label>
+          	<label class="checkbox-item">
+            	<input type="checkbox" name="parking" value="parking" class="visually-hidden">
+            	<span class="checkbox-indicator"></span>
+            	Парковка
+          	</label>
+          	<label class="checkbox-item">
+            	<input type="checkbox" name="wi-fi" value="wi-fi" class="visually-hidden">
+            	<span class="checkbox-indicator"></span>
+            	WI-Fi
+          	</label>
+        		
+        	</div>
+        	<div class="type-hotels">
+        		<p>Тип жилья:</p>
+        		<label class="checkbox-item">
+            		<input type="checkbox" name="hotel" value="hotel" class="visually-hidden">
+            		<span class="checkbox-indicator"></span>
+            		Гостиница
+          		</label>
+          		<label class="checkbox-item">
+            		<input type="checkbox" name="motel" value="motel" class="visually-hidden">
+            		<span class="checkbox-indicator"></span>
+            		Мотель
+          		</label>
+          		<label class="checkbox-item">
+            		<input type="checkbox" name="apartment" value="apartment" class="visually-hidden">
+            		<span class="checkbox-indicator"></span>
+            		Апартаменты
+          		</label>
+        		
+        	</div>
+        	<div class="cost">
+        		<p>Стоимость в сутки(р):</p>
+        		<label class="visually-hidden" for="costinput">Стоимость</label>
+        		<input type="range" id="costinput" name="costinput" min="1000" max="100000" step="1000">
+        		
+        	</div>
+        	<div class="costing">
+                 <output name="costoutput">50000</output>
+            </div>
+            <button class="button-show" type="submit">Найти</button>
+        </form>
+
       	</section>
 
 		<section class="sort">
@@ -51,7 +102,7 @@
 					<article class="catalogs">
 						<h3>Amara resod & spa</h3>
 						<div class="catalog-image">
-							<img src="img/hotel1.jpg" width="135" height="90" alt="Первый отель">
+							<img src="img/hotels1.jpg" width="135" height="90" alt="Первый отель">
 						</div>
 						<div class="price">
 							<span class="prise-items">Гостиница</span>
@@ -68,7 +119,7 @@
 					<article class="catalogs">
 						<h3>Desert quaile inn</h3>
 						<div class="catalog-image">
-							<img src="img/hotel2.jpg" width="135" height="90" alt="Втрой отель">
+							<img src="img/hotels2.jpg" width="135" height="90" alt="Втрой отель">
 						</div>
 						<div class="price">
 							<span class="prise-items">Мотель</span>
@@ -85,7 +136,7 @@
 					<article class="catalogs">
 						<h3>Villas at poco diablo</h3>
 						<div class="catalog-image">
-							<img src="img/hotel3.jpg" width="135" height="90" alt="Третий отель">
+							<img src="img/hotels3.jpg" width="135" height="90" alt="Третий отель">
 						</div>
 						<div class="catalog-price">
 							<span class="prise-items">Апартаменты</span>

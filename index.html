@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header class="main-header">
-		<a class="main-logo"><img src="img/logo.png" width="138" height="70" alt="Главный логотип"></a>
+		<a class="main-logo"><img src="img/logomain.png" width="138" height="70" alt="Главный логотип"></a>
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li><a href="#">Информация</a></li>
@@ -29,7 +29,7 @@
 				<p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
 				<div class="advantage-image">
-					<img src="img/citysedona.jpg" width="800" height="256" alt="Настоящий городок">
+					<img src="img/citysed.jpg" width="800" height="256" alt="Настоящий городок">
 				</div>
 				
 		</section>
@@ -60,7 +60,7 @@
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 				<div class="advantage-image">
-					<img src="img/devilsbridge.jpg" width="800" height="256" alt="Мост дьявола">
+					<img src="img/devils.jpg" width="800" height="256" alt="Мост дьявола">
 				</div>
 				
 		</section>
@@ -89,7 +89,24 @@
 		<section class="interesting">
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшее предложение гостиниц в Седоне</p>
-			<button class="button-interesting">Поиск гостиницы в седоне</button>
+			<button class="button-interesting" type="button">Поиск гостиницы в седоне</button>
+				<form class="interesting-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="date-race">
+						<label>Дата заезда:
+							<input type="text" name="date-race" value="" placeholder="24 апреля 2017" required>
+						</label>
+					</div>
+					<div class="date-departure">
+						<label>Дата выезда:
+							<input type="text" name="date-departure" value="" placeholder="4 июля 2017" required>
+						</label>
+					</div>
+					<!-- Тут не знаю как реализовать -->
+					<div class="adults">Взрослые:</div>
+					<div class="children">Дети:</div>
+
+          			<button class="find-button" type="submit">Найти</button>
+        		</form> 
 			<!-- Здесь будет форма -->
 		</section>
 
