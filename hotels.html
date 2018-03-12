@@ -26,28 +26,32 @@
         <!-- Здесь будет форма -->
         <form class="interesting-form" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=costinput.value">
         	<fieldset>
-        		<legend>Подбор отеля</legend>
-        	<div class="infrastructure">
-        		<p>Инфраструктура:</p>
-        	<label class="checkbox-item">
-            	<input type="checkbox" name="pool" value="pool" class="visually-hidden">
-            	<span class="checkbox-indicator"></span>
-            	Бассейн
-          	</label>
-          	<label class="checkbox-item">
-            	<input type="checkbox" name="parking" value="parking" class="visually-hidden">
-            	<span class="checkbox-indicator"></span>
-            	Парковка
-          	</label>
-          	<label class="checkbox-item">
-            	<input type="checkbox" name="wi-fi" value="wi-fi" class="visually-hidden">
-            	<span class="checkbox-indicator"></span>
-            	WI-Fi
-          	</label>
-        		
-        	</div>
+	        	<legend>Инфраструктура:</legend>
+	        	<div class="infrastructure">
+	        		
+	        	<label class="checkbox-item">
+	            	<input type="checkbox" name="pool" value="pool" class="visually-hidden">
+	            	<span class="checkbox-indicator"></span>
+	            	Бассейн
+	          	</label>
+	          	<label class="checkbox-item">
+	            	<input type="checkbox" name="parking" value="parking" class="visually-hidden">
+	            	<span class="checkbox-indicator"></span>
+	            	Парковка
+	          	</label>
+	          	<label class="checkbox-item">
+	            	<input type="checkbox" name="wi-fi" value="wi-fi" class="visually-hidden">
+	            	<span class="checkbox-indicator"></span>
+	            	WI-Fi
+	          	</label>
+	        		
+	        	</div>
+        	</fieldset>
+
+        	<fieldset>
+        		<legend>Тип жилья:</legend>
         	<div class="type-hotels">
-        		<p>Тип жилья:</p>
+        		
         		<label class="checkbox-item">
             		<input type="checkbox" name="hotel" value="hotel" class="visually-hidden">
             		<span class="checkbox-indicator"></span>
@@ -65,8 +69,12 @@
           		</label>
         		
         	</div>
+        	</fieldset>
+
+        	<fieldset>
+        		<legend>Стоимость в сутки(р):</legend>
         	<div class="cost">
-        		<p>Стоимость в сутки(р):</p>
+        		
         		<label class="visually-hidden" for="costinput">Стоимость</label>
         		<input type="range" id="costinput" name="costinput" min="1000" max="100000" step="1000">
         		
