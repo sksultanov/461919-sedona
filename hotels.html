@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Отели Седоны</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,7 +27,7 @@
 		<section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
         <!-- Здесь будет форма -->
-        <form class="interesting-form" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=costinput.value">
+        <form class="sort-form" action="https://echo.htmlacademy.ru" method="post" oninput="costoutput.value=costinput.value">
         	<fieldset>
 	        	<legend>Инфраструктура:</legend>
 	        	<div class="infrastructure">
@@ -111,11 +114,11 @@
 			<ul class="catalog-list">
 				<li class="catalog-item">
 					<article class="catalogs">
-						<h3>Amara resod & spa</h3>
+						<a href="#"><h3>Amara resod & spa</h3></a>
 						<div class="catalog-image">
 							<img src="img/hotels1.jpg" width="135" height="90" alt="Первый отель">
 						</div>
-						<div class="price">
+						<div class="prise">
 							<span class="prise-items">Гостиница</span>
 							<span class="prise-items">От 4000Р.</span>
 							<a href="#" class="button-reservation">Забронировать</a>
@@ -128,11 +131,11 @@
 				</li>
 				<li class="catalog-item">
 					<article class="catalogs">
-						<h3>Desert quaile inn</h3>
+						<a href="#"><h3>Desert quaile inn</h3></a>
 						<div class="catalog-image">
 							<img src="img/hotels2.jpg" width="135" height="90" alt="Втрой отель">
 						</div>
-						<div class="price">
+						<div class="prise">
 							<span class="prise-items">Мотель</span>
 							<span class="prise-items">От 3000Р.</span>
 							<a href="#" class="button-reservation">Забронировать</a>
@@ -145,11 +148,11 @@
 				</li>
 				<li class="catalog-item">
 					<article class="catalogs">
-						<h3>Villas at poco diablo</h3>
+						<a href="#"><h3>Villas at poco diablo</h3></a>
 						<div class="catalog-image">
 							<img src="img/hotels3.jpg" width="135" height="90" alt="Третий отель">
 						</div>
-						<div class="catalog-price">
+						<div class="prise">
 							<span class="prise-items">Апартаменты</span>
 							<span class="prise-items">От 2000Р.</span>
 							<a href="#" class="button-reservation">Забронировать</a>
@@ -166,7 +169,7 @@
 	</main>
 
 	<footer class="main-footer">
-		<div>#VISITSEDONA</div>
+		<div class="visit">#VISITSEDONA</div>
 		<div class="footer-social">
 			<ul>
 				<li class="social-button"><a href="#">Твиттер</a></li>
