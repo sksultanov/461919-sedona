@@ -81,10 +81,10 @@ img {
 .mountains-wrap {
 	background-color: #000000;
 	width: 100%;
-	background-image: url("../img/mountains.jpg");
-	background-position: 50% 23%;
-	background-size: 1200px 510px;
-	background-repeat: no-repeat;
+    background-image: url(../img/mask.png), url(../img/mountains.jpg);
+    background-position: 0 100%, 50% 23%;
+    background-size: 1200px 60px, 1200px, 510px;
+    background-repeat: no-repeat;
 }
 
 .page-title {
@@ -390,5 +390,8 @@ margin: 0 73px;
 	padding-bottom: 85px;
 }
 
-
+.main-footer, .sort-form {
+	display: flex;
+	justify-content: space-around;
+}
 
