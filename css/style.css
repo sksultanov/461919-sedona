@@ -76,14 +76,6 @@ input[type="radio"].visually-hidden {
 	background-color: #fff;
 }
 
-/*img {
-  height: auto;
-  overflow: hidden;
-}*/
-
-
-
-
 .main-header {
   position: relative;
   
@@ -110,8 +102,7 @@ input[type="radio"].visually-hidden {
  }
 
  .nav-item {
- 	width: 20%;
-  	text-align: right;
+	text-align: right;
   	vertical-align: middle;
 }
 
@@ -236,6 +227,10 @@ a.active{
 	min-height: 256px;
 	background-color: #eeeeee;
 
+}
+
+.advantage-image img {
+  height: 100%;
 }
 
 .feature-item{
