@@ -40,19 +40,17 @@
          </section>
 		
 		
-		<section class="advantages container">
+		<section class="advantages">
 			<div class="advantage advantage-extend">
 				<h3>Настоящий городок</h3>
 				<p>&mdash; №1 &mdash;</p>
-				<p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
+				<p>Седона - не аттракцион для туристов, <br> там течет своя жизнь</p>
 			</div>
-				<div class="advantage-image">
-					<img src="img/citysed.jpg" width="800" height="256" alt="Настоящий городок">
-				</div>
+				<img src="img/citysed.jpg" width="800" height="256" alt="Настоящий городок">
 				
 		</section>
 
-		<section class="features container">
+		<section class="features">
 			
 			
 			<ul class="feature-list">
@@ -71,12 +69,12 @@
 			</ul>
 		</section>
 
-		<section class="advantages container">
-				<div class="advantage-image">
+		<section class="advantages">
+
 					<img src="img/devils.jpg" width="800" height="256" alt="Мост дьявола">
-				</div>
+				
 				<div class="advantage advantage-extend">
-					<h3>Там есть мост дьявола</h3>
+					<h3>Там есть <br> мост дьявола</h3>
 					<p>&mdash; №2 &mdash;</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
@@ -84,18 +82,18 @@
 				
 		</section>
 
-		<section class="advantages container bottom-cont">
+		<section class="advantages bottom-cont">
 			
 			
 				<div class="advantage">
 					<h3>Небольшая площадь</h3>
 					<p>&mdash; №3 &mdash;</p>
-					<p>Все достопримечательности находятся очень близко</p>
+					<p>Все достопримечательности <br> находятся очень близко</p>
 				</div>
 				<div class="advantage">
 					<h3>Красивая дорога</h3>
 					<p>&mdash; №4 &mdash;</p>
-					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					<p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
 				</div>
 				<div class="advantage">
 					<h3>Мало туристов</h3>
@@ -107,22 +105,59 @@
 
 		<section class="interesting">
 			<h2>Заинтересовались?</h2>
-			<p>Укажите предпологаемые даты поездки, и мы покажем вам лучшее предложение гостиниц в Седоне</p>
+			<p>Укажите предпологаемые даты поездки, <br> и мы покажем вам лучшее предложение гостиниц в Седоне</p>
 			<button class="button-interesting" type="button">Поиск гостиницы в седоне</button>
 				<form class="interesting-form" action="https://echo.htmlacademy.ru" method="post">
 					<div class="date-race">
-						<label>Дата заезда:
+						<label>Дата заезда: 
 							<input type="text" name="date-race" value="" placeholder="24 апреля 2017" required>
 						</label>
+						<!-- <button class="calendar" type="button"><span class="visually-hidden">Календарь</span>
+						</button> -->
 					</div>
 					<div class="date-departure">
-						<label>Дата выезда:
+						<label>Дата выезда: 
 							<input type="text" name="date-departure" value="" placeholder="4 июля 2017" required>
 						</label>
+						<!-- <button class="calendar" type="button"><span class="visually-hidden">Календарь</span>
+						</button> -->
 					</div>
-					<!-- Тут не знаю как реализовать -->
-					<div class="adults">Взрослые:</div>
-					<div class="children">Дети:</div>
+					
+					<div class="people">
+                    <div class="form-block">
+                       <label for="grown" class="form-text">взрослые:</label>
+                       <button class="form-button">
+                        <svg width="15" height="15">
+                          <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3"/>
+                        </svg>
+                      </button>
+                      <input type="text" id="grown" class="form-input-adults" value="2">
+                      <button class="form-button">
+                        <svg width="15" height="15">
+                          <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
+                          <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
+                        </svg>
+                      </button>
+                       
+                     </div>
+                     <div class="form-block">
+                      <label for="babies" class="form-tex-right">дети:</label>
+                      <button class="form-button">
+                        <svg width="15" height="15">
+                          <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
+                        </svg>
+                      </button>
+                      <input type="text" id="babies" class="form-input-adults" value="0">
+                      <button class="form-button">
+                        <svg width="15" height="15">
+                          <line x1="1" y1="7" x2="13" y2="7" stroke="#a9a9a9" stroke-width="3" />
+                          <line x1="7" y1="1" x2="7" y2="13" stroke="#a9a9a9" stroke-width="3" />
+                        </svg>
+                      </button>
+                      
+                     </div>
+                    </div>   
+                 
 
           			<button class="find-button" type="submit">Найти</button>
         		</form> 

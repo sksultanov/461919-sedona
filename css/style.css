@@ -97,19 +97,15 @@ input[type="radio"].visually-hidden {
 
  .site-navigation {
  	display: flex;
- 	/*justify-content: space-between;*/
+ 	
 	width: 100%;
  }
 
  .nav-item {
- 	/*margin-left: 50px;*/
 	text-align: right;
   	vertical-align: middle;
 }
 
-/*.nav-item:first-child,
-.nav-item:nth-child(2) {
-  text-align: left; }*/
 
 .nav-item:first-child {
  	margin-right: 148px; 
@@ -188,7 +184,7 @@ a.active{
   
   align-items: center;
   padding-top: 60px;
-  padding-bottom: 52px;
+  padding-bottom: 50px;
   margin-top: -1px; }
 
 .page-title,
@@ -228,9 +224,8 @@ a.active{
   	
 }
 
-.container {
-	min-height: 256px;
-}
+
+
 
 .bottom-cont{
 	min-height: 256px;
@@ -255,6 +250,8 @@ a.active{
 
 .advantage h3 {
 	display: block;
+	margin-bottom: 0;
+	margin-top: 47px;  
 	width: 160px;
 	font-size: 21px;
   	line-height: 21px;
@@ -264,12 +261,16 @@ a.active{
 
 .advantage p {
 	display: block;
-	width: 290px;
+	width: 305px;
 	font-size: 14px;
   	line-height: 21px;
   	font-weight: 400;
   	color:#333333;
- 	text-align: center;
+ 	
+}
+.advantage>p {
+	margin-bottom: 0;
+	margin-top: 22px;
 }
 
 
@@ -298,7 +299,7 @@ a.active{
 
 .feature-item {
   padding-top: 58px;
-  padding-bottom: 17px;
+  padding-bottom: 22px;
 }
 
 .feature-item::before {
@@ -308,28 +309,36 @@ a.active{
 
 .feature-item-one::before {
 	width: 75px;
-	height: 72px;
-	background-image: url("../img/icons/icon-1.svg"); 
+	height: 75px;
+	background-image: url("../img/icons/icon-1.svg");
+	background-repeat: no-repeat; 
 }
 .feature-item-two::before {
-	width: 74px;
-	height: 70px;
-	background-image: url("../img/icons/icon-3.svg"); 
+	width: 75px;
+	height: 75px;
+	background-image: url("../img/icons/icon-3.svg");
+	background-repeat: no-repeat; 
 	}
 .feature-item-three::before {
-	width: 64px;
+	width: 75px;
 	height: 75px;
-	background-image: url("../img/icons/icon-2.svg"); 
+	background-image: url("../img/icons/icon-2.svg");
+	background-position: 90%;
+	background-repeat: no-repeat; 
 }
 
 .town-tagline {
   display: block;
   width: 75%;
   text-align: center;
-  margin-bottom: 60px; }
+  margin-bottom: 60px; 
+}
+
+
 
 
 .feature-item h3{
+	margin-top: 29px;
 	font-size: 21px;
   	line-height: 21px;
   	font-weight: 700;
@@ -337,6 +346,7 @@ a.active{
 }
 
 .feature-item p{
+	margin-top: 0;
 	font-size: 14px;
   	line-height: 21px;
   	
@@ -344,7 +354,22 @@ a.active{
  	text-align: center;
 }
 
+.interesting {
+	position: relative;
+}
+
+.interesting-form{
+	position: absolute;
+	left: 315px;
+	width: 569px;
+	min-height: 395px;
+	background-color: #fff;
+}
+
+
+
 .interesting h2{
+	margin-top: 50px;
 	font-size: 30px;
   	line-height: 36px;
   	font-weight: 700;
@@ -359,7 +384,9 @@ a.active{
 }
 
 .button-interesting{
-
+	margin-top: 33px;
+	position: relative;
+	left: 315px;
 	font-size: 21px;
   	line-height: 26px;
 	font-weight: 700;
@@ -371,8 +398,8 @@ a.active{
 
 	background-color: #766357;
 	border: none;
-	width: 567px;
-	height: 88px;
+	width: 569px;
+	height: 86px;
 }
 
 .button-interesting:hover,
@@ -419,7 +446,75 @@ a.active{
 	border-color:#e5e5e5; 
 }
 
+.date-race{
+	position: relative;
+	margin-top: 55px;
+	margin-left: 58px;
+}
+
+.date-departure {
+	position: relative;
+	margin-top: 28px;
+	margin-left: 58px;
+
+}
+
+.date-race input{
+  margin-left: 19px;
+  box-sizing: border-box;
+  width: 346px;
+  padding: 10px 10px;
+  padding-right: 40px;
+  background-image: url("../img/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 315px center;
+
+}
+
+.date-departure input {
+  margin-left: 16px;
+  box-sizing: border-box;
+  width: 346px;
+  padding: 10px 10px;
+  padding-right: 40px;
+  background-image: url("../img/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 315px center;
+
+}
+
+
+
+.people {
+	margin-top: 34px;
+	display: flex;
+
+}
+
+.form-block:first-child {
+	margin-left: 54px;
+}
+.form-block:last-child {
+	margin-left: 68px;
+}
+
+.form-input-adults {
+	width: 45px;
+	text-align: center;
+	font: inherit;
+	border: none;
+}
+.form-button {
+	
+	border: none;
+	background-color: #f2f2f2;
+}
+.form-text{
+	margin-right: 39px;
+}
+
 .find-button{
+	margin-top: 40px;
 	font-size: 21px;
   	line-height: 26px;
 	font-weight: 700;
