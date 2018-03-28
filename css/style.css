@@ -362,9 +362,14 @@ a.active{
 	position: absolute;
 	left: 315px;
 	width: 569px;
-	min-height: 395px;
+	height: 0;
+	overflow: hidden;
 	background-color: #fff;
 }
+
+.form-show {
+  min-height: 395px;
+ }
 
 
 
