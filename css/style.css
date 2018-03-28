@@ -433,6 +433,7 @@ a.active{
 }
 
 .interesting-form input{
+
 	background-color:#f2f2f2;
 
 }
@@ -465,9 +466,9 @@ a.active{
   width: 346px;
   padding: 10px 10px;
   padding-right: 40px;
-  background-image: url("../img/icons/calendar.svg");
+ /* background-image: url("../img/icons/calendar.svg");
   background-repeat: no-repeat;
-  background-position: 315px center;
+  background-position: 315px center;*/
 
 }
 
@@ -477,16 +478,32 @@ a.active{
   width: 346px;
   padding: 10px 10px;
   padding-right: 40px;
-  background-image: url("../img/icons/calendar.svg");
+  /*background-image: url("../img/icons/calendar.svg");
   background-repeat: no-repeat;
-  background-position: 315px center;
+  background-position: 315px center;*/
 
 }
 
+.calendar {
+	position: absolute;
+	height: 28px;
+	width: 28px;
+	right: 63px;
+	top: 8px;
+	border: none;
+	background-color: transparent;
+}
+ .calendar:hover svg {
+    fill: #000; 
+}
+
+ .calendar:active svg {
+    fill: #81b3d2; 
+}
 
 
 .people {
-	margin-top: 34px;
+	margin-top: 27px;
 	display: flex;
 
 }
@@ -495,26 +512,53 @@ a.active{
 	margin-left: 54px;
 }
 .form-block:last-child {
-	margin-left: 68px;
+	margin-left: 53px;
+}
+
+.form-block{
+	display: flex;
 }
 
 .form-input-adults {
 	width: 45px;
+	height: 40px;
 	text-align: center;
 	font: inherit;
 	border: none;
 }
 .form-button {
-	
+	padding: 0;
+
+	width: 35px;
+	height: 40px;
+	color: #a9a9a9;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 0px; 
 	border: none;
 	background-color: #f2f2f2;
 }
+
+.form-button:hover {
+	color:#000000;
+}
+
+.form-button:active {
+	color:#81b3d2;
+}
+
 .form-text{
-	margin-right: 39px;
+	margin-top: 7px;
+	margin-right: 42px;
+}
+.form-tex-right{
+	margin-top: 7px;
+	margin-right: 26px;
 }
 
 .find-button{
-	margin-top: 40px;
+	margin-top: 52px;
+	margin-left: 56px;
 	font-size: 21px;
   	line-height: 26px;
 	font-weight: 700;
@@ -543,9 +587,99 @@ a.active{
 	
 }
 
+.map {
+  background-image: url(../img/bg/map.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 471px; 
+}
+.map iframe {
+    width: 100%;
+    min-height: 471px;
+    border: 0;
+    
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-self: auto;
+	padding-top: 32px;
+	padding-bottom: 36px;
+}
+
+.social-button a {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+}
+
+.social-button a:hover {
+	background-color: #669ec0;
+}
+
+.social-button a:active {
+	background-color: #5496bd;
+}
+
+.social-button a svg:active {
+	fill: #88b6d1;
+}
+
+
+.footer-social ul {
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 156px;
+}
+
 .visit {
+	margin-left: 17px;
 	font-size: 21px;
 	font-weight: 700;
+}
+
+.footer-social {
+	margin-left: 25px;
+}
+
+.footer-copiright {
+	
+	display: flex;
+	align-items: center;
+	align-self: auto;
+
+}
+
+.footer-logo {
+	position: relative;
+	left: 4px;
+	top: 1px;
+}
+
+.footer-logo:hover {
+	fill:#81b3d2;
+}
+
+.footer-logo:active {
+	fill:#c9c8c8;
+}
+
+
+
+
+
+.sort-form {
+	display: flex;
+	justify-content: space-around;
 }
 
 .sort-form fieldset {
@@ -659,8 +793,5 @@ a.active{
 
 
 
-.main-footer, .sort-form {
-	display: flex;
-	justify-content: space-around;
-}
+
 
