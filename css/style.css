@@ -29,9 +29,7 @@ body {
   background-color: #f2f2f2;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+
 
 body, html {
   widows: 100%; }
@@ -85,7 +83,9 @@ input[type="radio"].visually-hidden {
   padding-top: 19px;
   padding-right: 6%;
   padding-left: 6%;
-  background-color: #fff; }
+  background-color: #fff;
+  box-sizing: border-box;
+ }
 
 .logo {
   position: absolute;
@@ -360,11 +360,15 @@ a.active{
 
 .interesting-form{
 	position: absolute;
+	padding-left: 55px;
 	left: 315px;
 	width: 569px;
 	height: 0;
 	overflow: hidden;
 	background-color: #fff;
+	font-size: 14px;
+  	line-height: 26px;
+  	font-weight: 700;
 }
 
 .form-show {
@@ -422,12 +426,7 @@ a.active{
 	
 }
 
-.interesting-form{
-	font-size: 14px;
-  	line-height: 26px;
-  	font-weight: 700;
 
-}
 
 .interesting-form input::-webkit-input-placeholder{
 	font-size: 14px;
@@ -438,9 +437,9 @@ a.active{
 }
 
 .interesting-form input{
-
+	
 	background-color:#f2f2f2;
-
+	border: 1px solid transparent;
 }
 
 .interesting-form input:hover{
@@ -448,20 +447,23 @@ a.active{
 }
 
 .interesting-form input:focus{
+	font-weight: 700;
+	text-transform: uppercase;
 	background-color:#ffffff;
-	border-color:#e5e5e5; 
+	border-color:#e5e5e5;
+	border: 1px solid #e5e5e5; 
 }
 
 .date-race{
 	position: relative;
 	margin-top: 55px;
-	margin-left: 58px;
+	
 }
 
 .date-departure {
 	position: relative;
 	margin-top: 28px;
-	margin-left: 58px;
+	
 
 }
 
@@ -471,9 +473,7 @@ a.active{
   width: 346px;
   padding: 10px 10px;
   padding-right: 40px;
- /* background-image: url("../img/icons/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: 315px center;*/
+
 
 }
 
@@ -483,9 +483,7 @@ a.active{
   width: 346px;
   padding: 10px 10px;
   padding-right: 40px;
-  /*background-image: url("../img/icons/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: 315px center;*/
+  
 
 }
 
@@ -514,7 +512,7 @@ a.active{
 }
 
 .form-block:first-child {
-	margin-left: 54px;
+	/*margin-left: 54px;*/
 }
 .form-block:last-child {
 	margin-left: 53px;
@@ -563,7 +561,7 @@ a.active{
 
 .find-button{
 	margin-top: 52px;
-	margin-left: 56px;
+	
 	font-size: 21px;
   	line-height: 26px;
 	font-weight: 700;
@@ -633,7 +631,7 @@ a.active{
 	background-color: #5496bd;
 }
 
-.social-button a svg:active {
+.social-button a:active .footer-svg {
 	fill: #88b6d1;
 }
 
@@ -684,7 +682,10 @@ a.active{
 
 .sort-form {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding-left: 61px;
+	padding-right: 59px;
+	padding-top: 29px;
 }
 
 .sort-form fieldset {
@@ -692,6 +693,7 @@ a.active{
 }
 
 .sort-form {
+	min-height: 190px;
 	background-color: #000000;
 	background-image: url("../img/backgroundhotels.jpg");
 	background-size: 1200px 250px;
@@ -710,16 +712,225 @@ a.active{
   font-weight: 700;
 }
 
-.button-show{
-	
-	width: 137px;
-	height: 36px;
-	color: #ffffff;
-	text-align: center;
-	vertical-align: middle;
-	background-color: #81b3d2;
-	cursor: pointer; 
+.filter-range {
+  width: 318px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
+
+.filter-range-title {
+  margin-bottom: 4px;
+
+  /*font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;*/
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 32px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 33px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price
+ {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price{
+	padding-left: 56px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+
+
+
+.range-toggle:hover {
+  border: 10px solid #ffffff;
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin-left: 85px;
+  padding: 6px 35px;
+  padding-right: 32px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+
+
+
+	
+
+.infrastructure {
+	margin-top: 21px;
+	/*margin-left: 38px;*/
+	min-height: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.type-hotels {
+	margin-top: 21px;
+	/*padding-left: 41px;*/
+	min-height: 110px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.hotels-second {
+	width: 160px;
+	margin-right: 208px;
+
+}
+
+.checkbox-item {
+	position: relative;
+	cursor: pointer;
+	padding-left: 40px;
+}
+
+.checkbox-item input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icons/checkbox-off.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px; 
+  
+}
+
+
+
+
+.checkbox-item input[type="checkbox"]:checked + .checkbox-indicator::before,
+.checkbox-item input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icons/checkbox-on.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+}
+
+.checkbox-item input[type="checkbox"] + .checkbox-indicator-fake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icons/checkbox-on-fake.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px; 
+  
+}
+
+
+
+
 
 
 .sort-part-first b,
