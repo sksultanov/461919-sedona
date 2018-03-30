@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-   <head>
-      <meta charset="UTF-8">
-      <title>Седона HTMLacademy</title>
-      <link rel="stylesheet" href="css/normalize.css">
-      <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet"> -->
-      <link rel="stylesheet" href="css/style.css">
-   </head>
-   <body>
-<svg style="display:none">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Седона HTMLacademy</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <svg style="display:none">
          <symbol viewBox="0 0 21 22" id="calendar">
             <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
             <path d="M4.594 8.225h2.625v2.066H4.594zm0 3.443h2.625v2.067H4.594zm0 3.444h2.625v2.066H4.594zm4.594 0h2.625v2.066H9.188zm0-3.444h2.625v2.067H9.188zm0-3.443h2.625v2.066H9.188zm4.593 6.887h2.625v2.066h-2.625zm0-3.444h2.625v2.067h-2.625zm0-3.443h2.625v2.066h-2.625z"/>
@@ -32,180 +33,181 @@
             <path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
          </symbol>
       </svg>
-      <div class="main-container">
-         <header class="main-header">
-            <div class="logo">
-               <a class="main-logo"><img src="img/logomain.png" width="138" height="70" alt="Главный логотип"></a>
-            </div>
-            <nav class="main-navigation">
-               <ul class="site-navigation">
-                  <li class="nav-item"><a href="#">Информация</a></li>
-                  <li class="nav-item"><a href="#">Фото и видео</a></li>
-                  <li class="nav-item"><a href="#">Карта штата</a></li>
-                  <li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
-               </ul>
-            </nav>
-         </header>
-         <main>
-            <section class="mountains">
-               <h2 class="visually-hidden">баннер</h2>
-               <div class="mountains-wrap">
-                  <img src="img/sedonamain.png" width="458" height="352" alt="Седона город" class="mountains-img">
-               </div>
-               <div class="mountains-tagline">
-                  <h1 class="page-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h1>
-                  <p class="page-advantage">Рассмотрим 5 причин, по которым Седона, круче чем Гранд Каньон!</p>
-               </div>
-            </section>
-            <section class="advantages">
-               <div class="advantage advantage-extend">
-                  <h3>Настоящий городок</h3>
-                  <p>&mdash; №1 &mdash;</p>
-                  <p>Седона - не аттракцион для туристов, <br> там течет своя жизнь</p>
-               </div>
-               <img src="img/citysed.jpg" width="800" height="256" alt="Настоящий городок">
-            </section>
-            <section class="features">
-               <ul class="feature-list">
-                  <li class="town-real feature-item feature-item-one">
-                     <h3>Жилье</h3>
-                     <p class="town-tagline">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-                  </li>
-                  <li class="town-real feature-item feature-item-two">
-                     <h3>Еда</h3>
-                     <p class="town-tagline">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  </li>
-                  <li class="town-real feature-item feature-item-three">
-                     <h3>Сувениры</h3>
-                     <p class="town-tagline">Не только китайского, но и местного производства</p>
-                  </li>
-               </ul>
-            </section>
-            <section class="advantages">
-               <img src="img/devils.jpg" width="800" height="256" alt="Мост дьявола">
-               <div class="advantage advantage-extend">
-                  <h3>Там есть <br> мост дьявола</h3>
-                  <p>&mdash; №2 &mdash;</p>
-                  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-               </div>
-            </section>
-            <section class="advantages bottom-cont">
-               <div class="advantage">
-                  <h3>Небольшая площадь</h3>
-                  <p>&mdash; №3 &mdash;</p>
-                  <p>Все достопримечательности <br> находятся очень близко</p>
-               </div>
-               <div class="advantage">
-                  <h3>Красивая дорога</h3>
-                  <p>&mdash; №4 &mdash;</p>
-                  <p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
-               </div>
-               <div class="advantage">
-                  <h3>Мало туристов</h3>
-                  <p>&mdash; №5 &mdash;</p>
-                  <p>Большинство едет в гранд каньон и толпится там!</p>
-               </div>
-            </section>
-            <section class="interesting">
-               <h2>Заинтересовались?</h2>
-               <p>Укажите предпологаемые даты поездки, <br> и мы покажем вам лучшее предложение гостиниц в Седоне</p>
-               <button class="button-interesting" type="submit">Поиск гостиницы в седоне</button>
-               <form class="interesting-form" action="https://echo.htmlacademy.ru" method="post">
-                  <div class="date-race">
-                     <label>Дата заезда: 
+  <div class="main-container">
+    <header class="main-header">
+      <div class="logo">
+        <a class="main-logo"><img src="img/logomain.png" width="138" height="70" alt="Главный логотип"></a>
+      </div>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="nav-item"><a href="#">Информация</a></li>
+          <li class="nav-item"><a href="#">Фото и видео</a></li>
+          <li class="nav-item"><a href="#">Карта штата</a></li>
+          <li class="nav-item"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="mountains">
+        <h2 class="visually-hidden">баннер</h2>
+        <div class="mountains-wrap">
+          <img src="img/sedonamain.png" width="458" height="352" alt="Седона город" class="mountains-img">
+        </div>
+        <div class="mountains-tagline">
+          <h1 class="page-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="page-advantage">Рассмотрим 5 причин, по которым Седона, круче чем Гранд Каньон!</p>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="advantage advantage-extend">
+          <h3>Настоящий городок</h3>
+          <p>&mdash; №1 &mdash;</p>
+          <p>Седона - не аттракцион для туристов, <br> там течет своя жизнь</p>
+        </div>
+        <img src="img/citysed.jpg" width="800" height="256" alt="Настоящий городок">
+      </section>
+      <section class="features">
+        <ul class="feature-list">
+          <li class="town-real feature-item feature-item-one">
+            <h3>Жилье</h3>
+            <p class="town-tagline">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+          </li>
+          <li class="town-real feature-item feature-item-two">
+            <h3>Еда</h3>
+            <p class="town-tagline">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="town-real feature-item feature-item-three">
+            <h3>Сувениры</h3>
+            <p class="town-tagline">Не только китайского, но и местного производства</p>
+          </li>
+        </ul>
+      </section>
+      <section class="advantages">
+        <img src="img/devils.jpg" width="800" height="256" alt="Мост дьявола">
+        <div class="advantage advantage-extend">
+          <h3>Там есть <br> мост дьявола</h3>
+          <p>&mdash; №2 &mdash;</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </section>
+      <section class="advantages bottom-cont">
+        <div class="advantage">
+          <h3>Небольшая площадь</h3>
+          <p>&mdash; №3 &mdash;</p>
+          <p>Все достопримечательности <br> находятся очень близко</p>
+        </div>
+        <div class="advantage">
+          <h3>Красивая дорога</h3>
+          <p>&mdash; №4 &mdash;</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
+        </div>
+        <div class="advantage">
+          <h3>Мало туристов</h3>
+          <p>&mdash; №5 &mdash;</p>
+          <p>Большинство едет в гранд каньон и толпится там!</p>
+        </div>
+      </section>
+      <section class="interesting">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предпологаемые даты поездки, <br> и мы покажем вам лучшее предложение гостиниц в Седоне</p>
+        <button class="button-interesting" type="submit">Поиск гостиницы в седоне</button>
+        <form class="interesting-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="date-race">
+            <label>Дата заезда:
                      <input type="text" name="date-race" value="" placeholder="24 апреля 2017" required>
                      </label>
-                     <button class="calendar" type="button">
+            <button class="calendar" type="button">
                         <span class="visually-hidden">Календарь</span>
                         <svg class="calendar-svg"  width="21" height="22" fill="#a9a9a9">
                            <use xlink:href="#calendar"></use>
                         </svg>
                      </button>
-                  </div>
-                  <div class="date-departure">
-                     <label>Дата выезда: 
+          </div>
+          <div class="date-departure">
+            <label>Дата выезда:
                      <input type="text" name="date-departure" value="" placeholder="4 июля 2017" required>
                      </label>
-                     <button class="calendar" type="button">
+            <button class="calendar" type="button">
                         <span class="visually-hidden">Календарь</span>
                         <svg class="calendar-svg"  width="21" height="22" fill="#a9a9a9">
                            <use xlink:href="#calendar"></use>
                         </svg>
                      </button>
-                  </div>
-                  <div class="people">
-                     <div class="form-block">
-                        <label for="grown" class="form-text">взрослые:</label>
-                        <button class="form-button" type="button">
+          </div>
+          <div class="people">
+            <div class="form-block">
+              <label for="grown" class="form-text">взрослые:</label>
+              <button class="form-button" type="button">
                         <span class="visually-hidden">Минус</span>-
                         </button>
-                        <input type="text" id="grown" class="form-input-adults" value="2">
-                        <button class="form-button" type="button">
+              <input type="text" id="grown" class="form-input-adults" value="2">
+              <button class="form-button" type="button">
                         <span class="visually-hidden">Плюс</span>+
                         </button>
-                     </div>
-                     <div class="form-block">
-                        <label for="babies" class="form-tex-right">дети:</label>
-                        <button class="form-button" type="button">
+            </div>
+            <div class="form-block">
+              <label for="babies" class="form-tex-right">дети:</label>
+              <button class="form-button" type="button">
                         <span class="visually-hidden">Минус</span>-
                         </button>
-                        <input type="text" id="babies" class="form-input-adults" value="0">
-                        <button class="form-button" type="button">
+              <input type="text" id="babies" class="form-input-adults" value="0">
+              <button class="form-button" type="button">
                         <span class="visually-hidden">Плюс</span>+
                         </button>
-                     </div>
-                  </div>
-                  <button class="find-button" type="submit">Найти</button>
-               </form>
-            </section>
-            <section class="maps">
-               <h2 class="visually-hidden">Карта города</h2>
-               <div class="map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d419393.59895639285!2d-111.78971539480634!3d34.8606028408091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1520171318180"  allowfullscreen></iframe>
-               </div>
-            </section>
-         </main>
-         <footer class="main-footer">
-            <div class="visit">#VISITSEDONA</div>
-            <div class="footer-social">
-               <ul>
-                  <li class="social-button">
-                     <a href="#">
+            </div>
+          </div>
+          <button class="find-button" type="submit">Найти</button>
+        </form>
+      </section>
+      <section class="maps">
+        <h2 class="visually-hidden">Карта города</h2>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d419393.59895639285!2d-111.78971539480634!3d34.8606028408091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1520171318180" allowfullscreen></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="visit">#VISITSEDONA</div>
+      <div class="footer-social">
+        <ul>
+          <li class="social-button">
+            <a href="#">
                         <span class="visually-hidden">Твиттер</span>
                         <svg class="footer-svg"  width="17" height="15" fill="#ffffff">
                            <use xlink:href="#twitter"></use>
                         </svg>
                      </a>
-                  </li>
-                  <li class="social-button">
-                     <a href="#">
+          </li>
+          <li class="social-button">
+            <a href="#">
                         <span class="visually-hidden">Фейсбук</span>
                         <svg class="footer-svg"  width="12" height="22" fill="#ffffff">
                            <use xlink:href="#fb-icon"></use>
                         </svg>
                      </a>
-                  </li>
-                  <li class="social-button">
-                     <a href="#">
+          </li>
+          <li class="social-button">
+            <a href="#">
                         <span class="visually-hidden">Ютуб</span>
                         <svg class="footer-svg"  width="20" height="16" fill="#ffffff">
                            <use xlink:href="#youtube"></use>
                         </svg>
                      </a>
-                  </li>
-               </ul>
-            </div>
-            <div class="footer-copiright">
-               <span>Website by</span>
-               <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copiright">
+        <span>Website by</span>
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
                   <span class="visually-hidden">htmlacademy</span>
                   <svg class="footer-logo"  width="108" height="37" fill="#000000">
                      <use xlink:href="#logo-htmlacademy"></use>
                   </svg>
                </a>
-            </div>
-         </footer>
       </div>
-      <script src="js/popup.js"></script> 
-   </body>
+    </footer>
+  </div>
+  <script src="js/popup.js"></script>
+</body>
+
 </html>
