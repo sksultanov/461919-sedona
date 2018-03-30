@@ -90,29 +90,43 @@ input[type="radio"].visually-hidden {
 	left: 50%;
 	margin: 0;
 	transform: translateX(-50%);
-	z-index: 10; }
+	z-index: 2; 
+}
 
 .site-navigation {
  	display: flex;
- 	width: 100%;
  }
 
 .nav-item {
-	text-align: right;
-  	vertical-align: middle;
+	vertical-align: middle;
+  	width: 10%;
 }
 
 
 .nav-item:first-child {
-	margin-right: 148px; 
+	margin-right: 136px; 
+
  }
 
 .nav-item:nth-child(2) {
-	margin-right: 389px; 
+	margin-right: 359px;
+	
+	
 }
 
 .nav-item:nth-child(3) {
-	margin-right: 163px; 
+	
+	margin-right: 138px;
+}
+
+.nav-item:first-child,
+.nav-item:nth-child(2) {
+	text-align: left;
+}
+
+.nav-item:nth-child(3), 
+.nav-item:last-child {
+	text-align: right;
 }
 
 .main-navigation {
@@ -127,16 +141,16 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 }
 
-.site-navigation a:hover,
+.nav-item a:hover,
 .catalogs a:hover {
 	color: #81b3d2 ;
 }
 
-.site-navigation a:focus {
+.nav-item a:focus {
 	color: #766357 ;
 }
 
-.site-navigation a:active,
+.nav-item a:active,
 .catalogs a:active{
 	color: rgba(0,0,0,0.3) ;
 }
@@ -449,32 +463,21 @@ a.button-detailed:active {
 
 }
 
-.date-race input{
+.date-race input,
+.date-departure input {
   margin-left: 19px;
   box-sizing: border-box;
-  width: 346px;
+  width: 345px;
   padding: 10px 10px;
   padding-right: 40px;
-
-
-}
-
-.date-departure input {
-  margin-left: 16px;
-  box-sizing: border-box;
-  width: 346px;
-  padding: 10px 10px;
-  padding-right: 40px;
-  
-
 }
 
 .calendar {
 	position: absolute;
 	height: 28px;
 	width: 28px;
-	right: 6px;
-	top: 8px;
+	right: 9px;
+	top: 7px;
 	border: none;
 	background-color: transparent;
 }
@@ -532,7 +535,7 @@ a.button-detailed:active {
 }
 
 .form-tex-right{
-	margin-right: 26px;
+	margin-right: 28px;
 }
 
 .find-button{
@@ -745,7 +748,6 @@ a.button-reservation:active {
   margin: 0;
 
   color: inherit;
-  font: inherit;
 
   background: none;
   border: none;
@@ -820,27 +822,22 @@ a.button-reservation:active {
   background: #ffffff;
 }
 
-.infrastructure {
+.infrastructure, .type-hotels {
 	margin-top: 21px;
-	min-height: 110px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
-.type-hotels {
-	margin-top: 21px;
-	min-height: 110px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-}
 
 .hotels-second {
 	width: 160px;
 	margin-right: 208px;
 
+}
+
+.checkbox-item:first-child,
+.checkbox-item:nth-child(2) {
+	margin-bottom: 22px;
 }
 
 .checkbox-item {
@@ -950,15 +947,16 @@ a.button-reservation:active {
 	font-weight: 700;
 }
 
-.prise a h3 {
+.price a h3 {
 	color: #000000;
+	transition-duration: .5s;
 }
 
-.prise a h3:hover {
+.price a h3:hover {
 	color: #81b3d2;
 }
 
-.prise a h3:active {
+.price a h3:active {
 	color: rgba(0,0,0,0.3);
 }
 
@@ -1007,11 +1005,7 @@ a.button-reservation:active {
 	padding-right: 73px;
 }
 
-.catalog-item:first-child {
-	border-top: 1px solid #e5e5e5;
-	border-bottom: 1px solid #e5e5e5;
-}
-
+.catalog-item:first-child,
 .catalog-item:last-child {
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
@@ -1027,6 +1021,7 @@ a.button-reservation:active {
 	
 	background-color: #766357 ;
 	border: none;
+	transition-duration: .5s;
 }
 
 .button-detailed {
@@ -1039,34 +1034,31 @@ a.button-reservation:active {
 	
 	background-color: #81b3d2;
 	border: none;
+	transition-duration: .5s;
 }
 
-.rating-item {
-	padding: 3px 13px;
-	color: #666666;
-	background-color: #f2f2f2;
-}
 
-.prise{
-	margin-right: 494px;
+.price{
+	margin-right: 493px;
 	width: 257px;
 }
 
-.prise-item {
+.price-item {
 	display: flex;
 	justify-content: space-between;
 }
 
-.prise-buttons span {
+.price-buttons span {
 	display: block;
 	margin-top: 6px;
 }
 
-.prise-buttons a {
+.price-buttons a {
 	margin-top: 14px;
 }
 
 .catalog-rating {
+	width: 110px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -1080,6 +1072,12 @@ a.button-reservation:active {
 
 .hotels-rating-item {
 	margin-left: 5px;
+}
+
+.rating-item {
+	padding: 3px 13px;
+	color: #666666;
+	background-color: #f2f2f2;
 }
 
 
