@@ -30,11 +30,6 @@ body {
 }
 
 
-
-body, html {
-  widows: 100%; }
-
-
 a {
 	display: block;
 	padding: 0;
@@ -153,10 +148,6 @@ input[type="radio"].visually-hidden {
 .nav-item a:active,
 .catalogs a:active{
 	color: rgba(0,0,0,0.3) ;
-}
-
-a.active{
-	color: #9e897b; 
 }
 
 .mountains{
@@ -409,31 +400,37 @@ a.active{
 	height: 86px;
 }
 
-.button-interesting:hover,
-a.button-detailed:hover{
-	color: #ffffff;
-	background-color: #604e43;
-	
+.interesting-form input::-webkit-input-placeholder {
+  	line-height: 26px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	color: #000000;
 }
-
-.button-interesting:focus,
-a.button-detailed:active {
-	color: rgba(255,255,255,0.3);
-	background-color: #503e33;
-	
+.interesting-form input:-ms-input-placeholder {
+  	line-height: 26px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	color: #000000;
 }
-
-
-
-.interesting-form input::-webkit-input-placeholder{
-	font-size: 14px;
+.interesting-form input::-ms-input-placeholder {
+  	line-height: 26px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	color: #000000;
+}
+.interesting-form input::placeholder {
   	line-height: 26px;
   	font-weight: 700;
   	text-transform: uppercase;
   	color: #000000;
 }
 
+
 .interesting-form input{
+	line-height: 26px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	color: #000000;
 	
 	background-color:#f2f2f2;
 	border: 2px solid transparent;
@@ -474,10 +471,10 @@ a.button-detailed:active {
 
 .calendar {
 	position: absolute;
-	height: 28px;
-	width: 28px;
-	right: 9px;
-	top: 7px;
+	height: 33px;
+	width: 33px;
+	right: 4px;
+	top: 4px;
 	border: none;
 	background-color: transparent;
 }
@@ -557,15 +554,28 @@ a.button-detailed:active {
 }
 
 .find-button:hover,
-a.button-reservation:hover {
+a.button-detailed:hover {
 	color: #ffffff;
 	background-color: #669ec0;
 	
 }
 .find-button:focus,
+a.button-detailed:active {
+	color: rgba(255,255,255,0.3);     
+	background-color: #5496bd; 
+}
+
+.button-interesting:hover,
+a.button-reservation:hover{
+	color: #ffffff;
+	background-color: #604e43;
+	
+}
+
+.button-interesting:focus,
 a.button-reservation:active {
 	color: rgba(255,255,255,0.3);
-	background-color: #5496bd; 
+	background-color: #503e33;
 	
 }
 
