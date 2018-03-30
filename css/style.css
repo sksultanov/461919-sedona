@@ -469,7 +469,7 @@ a.button-reservation:active {
   background-color: #503e33;
 }
 .map {
-  background-image: url(../img/bg/map.jpg);
+  background-image: url(../img/map.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
