@@ -24,18 +24,6 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
-a {
-  display: block;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-}
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -46,9 +34,25 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.site-navigation,
+.nav-item,
+.feature-list,
+.footer-social ul,
+.social-button,
+.sort-list,
+.sort-item,
+.catalog-list,
+.catalog-item,
+.hotels-list,
+.hotels-rating-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .main-container {
   width: 1200px;
@@ -71,7 +75,8 @@ input[type="radio"].visually-hidden {
   top: 0;
   left: 50%;
   margin: 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 2;
 }
 .site-navigation {
@@ -80,6 +85,9 @@ input[type="radio"].visually-hidden {
 .nav-item {
   vertical-align: middle;
   width: 10%;
+}
+.nav-item a {
+  text-decoration: none;
 }
 .nav-item:first-child {
   margin-right: 136px;
@@ -126,7 +134,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #000000;
+  background-color: #898d95;
   width: 100%;
   min-height: 510px;
   background-image: url(../img/mask.png), url(../img/mountains.jpg);
@@ -374,6 +382,7 @@ input[type="radio"].visually-hidden {
 }
 .date-race input,
 .date-departure input {
+  height: 39px;
   margin-left: 19px;
   box-sizing: border-box;
   width: 345px;
@@ -497,13 +506,13 @@ a.button-reservation:active {
   height: 48px;
   background-color: #81b3d2;
 }
-.social-button a:hover {
+.social-item:hover {
   background-color: #669ec0;
 }
-.social-button a:active {
+.social-item:active {
   background-color: #5496bd;
 }
-.social-button a:active .footer-svg {
+.social-item:active .footer-svg {
   fill: #88b6d1;
 }
 .footer-social ul {
@@ -548,7 +557,7 @@ a.button-reservation:active {
 }
 .sort-form {
   min-height: 190px;
-  background-color: #000000;
+  background-color: #758ca2;
   background-image: url("../img/backgroundhotels.jpg");
   background-size: 1200px 562px;
   background-repeat: no-repeat;
@@ -586,7 +595,8 @@ a.button-reservation:active {
   width: 2px;
   height: 22px;
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .price-controls label {
   display: inline-block;
@@ -763,14 +773,17 @@ a.button-reservation:active {
   line-height: 26px;
   font-weight: 700;
 }
-.price a h3 {
+.price-link {
+  text-decoration: none;
+}
+.price-link h3 {
   color: #000000;
   transition-duration: 0.5s;
 }
-.price a h3:hover {
+.price-link h3:hover {
   color: #81b3d2;
 }
-.price a h3:active {
+.price-link h3:active {
   color: rgba(0, 0, 0, 0.3);
 }
 .sort-part-second span {
@@ -778,6 +791,7 @@ a.button-reservation:active {
   line-height: 18px;
 }
 .sort-item a {
+  text-decoration: none;
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -811,6 +825,8 @@ a.button-reservation:active {
   border-bottom: 1px solid #e5e5e5;
 }
 .button-reservation {
+  display: block;
+  text-decoration: none;
   padding: 3px 16px;
   font: inherit;
   text-align: center;
@@ -822,6 +838,8 @@ a.button-reservation:active {
   transition-duration: 0.5s;
 }
 .button-detailed {
+  display: block;
+  text-decoration: none;
   padding: 3px 16px;
   font: inherit;
   text-align: center;
