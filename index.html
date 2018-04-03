@@ -111,53 +111,55 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предпологаемые даты поездки, <br> и мы покажем вам лучшее предложение гостиниц в Седоне</p>
         <button class="button-interesting" type="submit">Поиск гостиницы в седоне</button>
-        <form class="interesting-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="date-race">
-            <label>Дата заезда:
-              <input class="input-date" type="text" name="date-race" value="" placeholder="24 апреля 2017" required>
-            </label>
-            <button class="calendar" type="button">
-              <span class="visually-hidden">Календарь</span>
-              <svg class="calendar-svg"  width="21" height="22" fill="#a9a9a9">
-               <use xlink:href="#calendar"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="date-departure">
-            <label>Дата выезда:
-              <input class="input-date" type="text" name="date-departure" value="" placeholder="4 июля 2017" required>
-            </label>
-            <button class="calendar" type="button">
-              <span class="visually-hidden">Календарь</span>
-              <svg class="calendar-svg"  width="21" height="22" fill="#a9a9a9">
-                <use xlink:href="#calendar"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="people">
-            <div class="form-block">
-              <label for="grown" class="form-text">взрослые:</label>
-              <button class="form-button" type="button">
-                <span class="visually-hidden">Минус</span>-
-              </button>
-              <input type="text" id="grown" class="form-input-adults" value="2">
-              <button class="form-button" type="button">
-                <span class="visually-hidden">Плюс</span>+
+        <div class="interesting-form form-show">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="date-race">
+              <label>Дата заезда:
+                <input class="input-date" type="text" name="date-race" placeholder="24 апреля 2017">
+              </label>
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+                <svg class="calendar-svg"  width="21" height="22" fill="#a9a9a9">
+                 <use xlink:href="#calendar"></use>
+                </svg>
               </button>
             </div>
-            <div class="form-block">
-              <label for="babies" class="form-tex-right">дети:</label>
-              <button class="form-button" type="button">
-                <span class="visually-hidden">Минус</span>-
-              </button>
-              <input type="text" id="babies" class="form-input-adults" value="0">
-              <button class="form-button" type="button">
-                <span class="visually-hidden">Плюс</span>+
+            <div class="date-departure">
+              <label>Дата выезда:
+                <input class="input-date" type="text" name="date-departure"  placeholder="4 июля 2017">
+              </label>
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+                <svg class="calendar-svg"  width="21" height="22" fill="#a9a9a9">
+                  <use xlink:href="#calendar"></use>
+                </svg>
               </button>
             </div>
-          </div>
-          <button class="find-button" type="submit">Найти</button>
-        </form>
+            <div class="people">
+              <div class="form-block">
+                <label for="grown" class="form-text">взрослые:</label>
+                <button class="form-button" type="button">
+                  <span class="visually-hidden">Минус</span>-
+                </button>
+                <input type="text" id="grown" class="form-input-adults" value="2">
+                <button class="form-button" type="button">
+                  <span class="visually-hidden">Плюс</span>+
+                </button>
+              </div>
+              <div class="form-block">
+                <label for="babies" class="form-tex-right">дети:</label>
+                <button class="form-button" type="button">
+                  <span class="visually-hidden">Минус</span>-
+                </button>
+                <input type="text" id="babies" class="form-input-adults" value="0">
+                <button class="form-button" type="button">
+                  <span class="visually-hidden">Плюс</span>+
+                </button>
+              </div>
+            </div>
+            <button class="find-button" type="submit">Найти</button>
+          </form>
+        </div>
       </section>
       <section class="maps">
         <h2 class="visually-hidden">Карта города</h2>
@@ -207,7 +209,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/popup.js"></script>
+  <script src="js/popup.min.js"></script>
 </body>
 
 </html>
