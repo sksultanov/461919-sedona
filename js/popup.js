@@ -5,6 +5,11 @@ var race = popup.querySelector("[name=date-race]");
 var form = popup.querySelector("form");
 var departure = popup.querySelector("[name=date-departure]");
 
+document.addEventListener("DOMContentLoaded", function (evt) {
+    popup.classList.add("invisible");
+    
+});
+
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
